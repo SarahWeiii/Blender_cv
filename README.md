@@ -1,5 +1,9 @@
 # Blender for cv
-This repo provides tutorials and a library to help CV researchers to generate data using blender.
+This repo provides tutorials and a library to help CV researchers to generate synthetic data using Blender. 
+
+The tutorial covers basic operations in Blender.
+
+The library provides functions help generating images from different viewpoints.
 
 ## Introduction
 
@@ -126,7 +130,9 @@ Use the following commands:
 
 If you encounter more problems installing blcv in Blender environment, you can refer to this [answer]( https://blender.stackovernet.com/cn/q/14721 ).
 
-If there is problems using `pip`, you can simply clone this repo, and use the files in `blcv` folder.
+
+
+If there are problems using `pip`, you can simply clone this repo, and put `blcv` folder under the root directory of your project. Remember to add `blcv` to environment path using `sys.path.append()`.
 
 ### Functions
 
@@ -161,13 +167,27 @@ blcv.tools
 
 ### Demo
 
-You can modify the configurations and run `start_blender.py` to call `blender_script` in Blender.
+#### Files
+
+`start_blender.py`: outside script; set configurations for Blender and call inside script.
+
+`blender_script.py`: inside script; import models, set viewpoints and get images.
+
+`blank.blend`: Blender file; save current scene information; you can open it by Blender and modify objects in it, this is the initial scene of demo.
+
+#### How to run
+
+Modify the configurations in `start_blender.py`
+
+`python start_blender.py`
+
+#### Results
 
 The demo generates airplane images from circle viewpoints using the models in `examples` folder, the results will be saved in `images` folder.
 
 ### Contact
 
-If you have any questions or encounter any problems, feel free to contact me by sarahwei0210@gmail.com.
+If you have any questions or encounter any problems, feel free to [contact me](sarahwei0210@gmail.com).
 
 
 
