@@ -1,0 +1,7 @@
+ShapeNetCore.v1/
+images/
+logs
+blcv.egg-info/
+build/
+dist/
+setup.py
