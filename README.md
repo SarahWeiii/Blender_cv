@@ -9,25 +9,25 @@ Game engine based software (Unreal, Unity) provides a virtual world for simulati
 
 ## Blender tutorial
 
-#### panel
+### Panel
 
 The whole interface is divided into several panels, each panel has type and the type can be changed (3D view, Timeline, etc).
 
 ![pic1](./pics/pic1.jpg)
 
-##### split new panel
+#### split new panel
 
 To create more panels, drag the triangle on the right top of the main panel, and pull towards left or down, a new panel will appear.
 
 ![pic2](./pics/pic2.jpg)
 
-##### merge panels
+#### merge panels
 
 To merge two panels, drag the triangle and pull towards top or right to merge the corresponding panel.
 
 ![pic3](./pics/pic3.jpg)
 
-#### Navigate
+### Navigate
 
 left click - pivot point
 
@@ -35,7 +35,7 @@ right click - select
 
 wheel - zoom in / out
 
-#### Import object
+### Import object
 
 File -> import -> .obj
 
@@ -43,7 +43,7 @@ Press F12 to render the image (see the objects from camera point)
 
 Press F11 to go back
 
-#### Change the camera location in the interface
+### Change the camera location in the interface
 
 Directly move the camera and point light in the 3D viewpoint scene. Use the options below to change the location, rotation and scale.
 
@@ -57,7 +57,7 @@ Use the **view** menu to toggle to other views. (The example below shows the top
 
 ![pic6](./pics/pic6.jpg)
 
-#### Add more object to the scene
+### Add more object to the scene
 
 From the left panel **Create** to find objects to put into the scene.
 
@@ -65,7 +65,7 @@ All the objects in the scene are shown in the **Outliner** panel.
 
 ![pic7](./pics/pic7.jpg)
 
-#### Use python to control the scene
+### Use python to control the scene
 
 Switch the bottom panel to **python console**
 
@@ -81,7 +81,7 @@ Hover over text field to get the object's python value and change it in python c
 
 ![pic9](./pics/pic9.jpg)
 
-#### Build the automation pipeline
+### Build the automation pipeline
 
 Switch the panel type to **text editor**,  new or open a file and write python script in it.
 
@@ -101,7 +101,7 @@ This section tells how to write scripts to achieve generating images automatical
 
 To start Blender in the command line, we can use `blender --script xxx.py` to run `xxx.py` in Blender
 
-#### Two types of python scripts
+### Two types of python scripts
 
 - Outside to call Blender
 - Inside Blender to control Blender
@@ -110,7 +110,7 @@ To start Blender in the command line, we can use `blender --script xxx.py` to ru
 
 This repo provides a simple package `blcv` that can put models into scene and get images from different viewpoints.
 
-#### Install
+### Install
 
 You can use `pip install blcv ` to install the package.
 
@@ -124,9 +124,11 @@ Use the following commands:
 
 `/blender-path/2.xx/python/bin$ python.exe -m pip install blcv`
 
-If you encounter more problems, you can refer to this [answer]( https://blender.stackovernet.com/cn/q/14721 ).
+If you encounter more problems installing blcv in Blender environment, you can refer to this [answer]( https://blender.stackovernet.com/cn/q/14721 ).
 
-#### Functions
+If there is problems using `pip`, you can simply clone this repo, and use the files in `blcv` folder.
+
+### Functions
 
 blcv
 
@@ -157,13 +159,13 @@ blcv.tools
   - get_img(self, filepath): save image crop in filaepath
 - import_obj(shape_file): import a new model into the scene and return its name
 
-#### Demo
+### Demo
 
 You can modify the configurations and run `start_blender.py` to call `blender_script` in Blender.
 
 The demo generates airplane images from circle viewpoints using the models in `examples` folder, the results will be saved in `images` folder.
 
-#### Contact
+### Contact
 
 If you have any questions or encounter any problems, feel free to contact me by sarahwei0210@gmail.com.
 
