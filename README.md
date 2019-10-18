@@ -187,7 +187,7 @@ The demo generates airplane images from circle viewpoints using the models in `e
 
 ### Contact
 
-If you have any questions or encounter any problems, feel free to [contact me](sarahwei0210@gmail.com).
+If you have any questions or encounter any problems, feel free to contact me by sarahwei0210@gmail.com.
 
 
 
