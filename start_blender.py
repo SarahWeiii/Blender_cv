@@ -12,7 +12,7 @@ import blcv as bc
 
 # Blender configs
 render_code = 'blender_script.py'
-blender_executable_path = 'D:/Install/Blender/blender.exe' #!! MODIFY if necessary
+blender_executable_path = 'D:/Install/Blender/blender.exe' #!! MODIFY Blender install path
 blank_blend_file_path = os.path.join(BASE_DIR, 'blank.blend') 
 
 

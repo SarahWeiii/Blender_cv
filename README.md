@@ -13,6 +13,8 @@ Game engine based software (Unreal, Unity) provides a virtual world for simulati
 
 ## Blender tutorial
 
+This tutorial is for **Blender 2.7.9**
+
 ### Panel
 
 The whole interface is divided into several panels, each panel has type and the type can be changed (3D view, Timeline, etc).
@@ -107,7 +109,7 @@ To start Blender in the command line, we can use `blender --script xxx.py` to ru
 
 ### Two types of python scripts
 
-- Outside to call Blender
+- Outside to call Blender (You can also use *shell* not python)
 - Inside Blender to control Blender
 
 ## Library tutorial
@@ -122,17 +124,15 @@ Note that we should use `blcv` in Blender's bundled Python, so you need to insta
 
 Use the following commands:
 
-`$ cd /blender-path/2.xx/python/bin/`
+```
+$ cd /blender-path/2.xx/python/bin/
 
-`/blender-path/2.xx/python/bin$ python.exe get-pip.py`
+/blender-path/2.xx/python/bin$ python.exe get-pip.py
 
-`/blender-path/2.xx/python/bin$ python.exe -m pip install blcv`
+/blender-path/2.xx/python/bin$ python.exe -m pip install blcv
+```
 
 If you encounter more problems installing blcv in Blender environment, you can refer to this [answer]( https://blender.stackovernet.com/cn/q/14721 ).
-
-
-
-If there are problems using `pip`, you can simply clone this repo, and put `blcv` folder under the root directory of your project. Remember to add `blcv` to environment path using `sys.path.append()`.
 
 ### Functions
 
@@ -177,9 +177,13 @@ blcv.tools
 
 #### How to run
 
-Modify the configurations in `start_blender.py`
+Modify *Blender install path* in `start_blender.py`, then:
 
-`python start_blender.py`
+```
+python start_blender.py
+```
+
+The `start_blender.py` will automatically activate Blender and run `blender_script.py` in it.
 
 #### Results
 
