@@ -177,6 +177,10 @@ class BcScene:
 def import_obj(shape_file):
     bpy.ops.import_scene.obj(filepath=shape_file, split_mode='OFF') 
     return bpy.context.selected_objects[0].name
+
+def import_fbx(shape_file):
+    bpy.ops.import_scene.fbx(filepath=shape_file) 
+    return bpy.context.selected_objects[0].name
         
 
 
